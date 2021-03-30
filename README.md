@@ -5,7 +5,7 @@ Slot machine works as follows
 ```
 1 - Receives a request to perform Spin action (default and currently supported). Request contains mandatory bet amount in EUR.
 2 - User can also pass optional cheat params to generate specific outcomes. Format of the request is provided further down.
-3 - System generates a random outcome (if no cheat is provoided) and created a visible reel of symbols (right now only 3 reels, 5 columns supported).
+3 - System generates a random outcome (if no cheat is provided) and created a visible reel of symbols (right now only 3 reels, 5 columns supported).
 4 - System checks any win situations from the pre-defined list of betlines configured (right now hardcoded and pre-configured)
 5 - System calculates total win amount and desired outcome and sends back to Client
 ```
@@ -38,10 +38,10 @@ java -jar target/slot-machine-1.0.0.jar
 
 ### Alternate - PreBuilt Jar
 
-download slot-machine-1.0.0.jar in local system and run below command
+download slot-machine-1.0.0.jar in local system and run below command from the downloaded folder location
 
 ```
-java -jar target/slot-machine-1.0.0.jar
+java -jar slot-machine-1.0.0.jar
 ```
 
 ### Docker - Run application as container
